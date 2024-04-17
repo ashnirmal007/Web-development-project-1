@@ -14,7 +14,7 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-one-third is-offset-4">
-                    <div class="card">
+                    <div class="card" id="card-container">
                         <header class="card-header">
                             <p class="card-header-title">Ping Pong Score Keeper</p>
                         </header>
@@ -24,54 +24,50 @@
                             </figure>
                         </div>
                         <div class="card-content">
-                            <div class="content">
-
-                                <div id="player-container">
-                                    <div id="player" class="card">
-                                        <div class="card-image">
-                                            <h1 id="playerh1" class="title is-3 has-text-centered">Player 1</h1>
-                                            <figure class="image is-64x64">
+                            <div id="player-container">
+                                <div id="player" class="card">
+                                    <h2 id="playerh1" class="title is-3 has-text-centered">Player 1</h1>
+                                        <div class="card-image has-text-centered">
+                                            <figure class="image is-96x96 is-inline-block">
                                                 <img src="images/tom.jpg" alt="Placeholder image" />
                                             </figure>
-                                            <h1 id="p1Display" class="title is-3 has-text-centered">0</h1>
                                         </div>
-                                    </div>
-
-                                    <div id="player" class="card">
-                                        <div class="card-image">
-                                            <h1 id="playerh2" class="title is-3 has-text-centered">Player 2</h1>
-                                            <figure class="image is-64x64">
+                                        <h2 id="p1Display" class="title is-3 has-text-centered">0</h1>
+                                </div>
+                                <div id="player" class="card">
+                                    <h2 id="playerh2" class="title is-3 has-text-centered">Player 2</h1>
+                                        <div class="card-image has-text-centered">
+                                            <figure class="image is-96x96 is-inline-block">
                                                 <img src="images/jerry.jpg" alt="Placeholder image" />
                                             </figure>
-                                            <h1 id="p2Display" class="title is-3 has-text-centered">0</h1>
                                         </div>
-                                    </div>
+                                        <h2 id="p2Display" class="title is-3 has-text-centered">0</h1>
                                 </div>
-
-                                <div id="winningScore">
-                                    <label for="playto" class="label is-large is-inline">Winning Score</label>
-                                    <div class="select is-rounded">
-                                        <select name="" id="playto">
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-                                            <option value="7">7</option>
-                                            <option value="8">8</option>
-                                            <option value="9">9</option>
-                                            <option value="10">10</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <p class="subtitle">Press below buttons to keep score</p>
                             </div>
+                            <div id="winningScore">
+                                <label for="playto" class="label is-large is-inline">Winning Score</label>
+                                <div class="select is-rounded">
+                                    <select name="playto" id="playto">
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <p class="subtitle">Press below buttons to keep score</p>
+
                         </div>
                         <footer class="card-footer">
-                            <button id="p1Button" class="is-primary button card-footer-item is-large">+1 Player
+                            <button id="p1Button" class="is-primary button card-footer-item is-medium">+1 Player
                                 One</button>
-                            <button id="p2Button" class="is-info button card-footer-item is-large">+1 Player
+                            <button id="p2Button" class="is-info button card-footer-item is-medium">+1 Player
                                 Two</button>
-                            <button id="reset" class="is-danger button card-footer-item is-large">Reset</button>
+                            <button id="reset" class="is-danger button card-footer-item is-medium">Reset</button>
                         </footer>
                     </div>
                 </div>
